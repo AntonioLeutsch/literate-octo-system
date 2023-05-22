@@ -123,14 +123,9 @@ const navigation: Navigation = {
 
 const email: Ref<string> = ref("");
 
-const stupidNewsletterForm = () => {
-  // submit form to backend using fetch
-
-  // send to endpoint /api/newsletter
-  fetch("/api/newsletter", {
-    method: "POST",
-    body: JSON.stringify({ email: email.value }),
-  });
+const stupidNewsletterForm = async () => {
+  // @ts-ignore
+  sendToNewsletter();
 
   // reset form
   email.value = "";

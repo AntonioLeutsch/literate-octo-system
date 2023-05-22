@@ -3,7 +3,7 @@
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 457 402"
-    :class="class"
+    :class="props.class"
   >
     <path
       fill-rule="evenodd"

@@ -95,6 +95,8 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
+import type { Ref } from "vue";
+
 interface NavigationItem {
   name: string;
   href: string;
@@ -119,7 +121,7 @@ const navigation: Navigation = {
   ],
 };
 
-const email: string = ref("");
+const email: Ref<string> = ref("");
 
 const stupidNewsletterForm = () => {
   // submit form to backend using fetch
